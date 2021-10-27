@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+ 
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+
+.title{
+    text-align: center;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  mat-grid-tile {
+    background: lightblue;
+  }
+.columns{
+  display: flex;
+}
+.column{
+  width:550px;
+  height: 200px;
+}
+.label{
+  font: bold;
+  background-color: yellow;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 900;
+}

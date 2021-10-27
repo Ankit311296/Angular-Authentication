@@ -1,0 +1,43 @@
+<div class="container">
+  <mat-card>
+    <mat-card>
+      <form  [formGroup] = "myForm" (ngSubmit)="submit()">
+        <mat-card-title>
+          <h4>Add Students</h4>
+        </mat-card-title>
+        <div class="columns">
+          <mat-form-field class="example-full-width">
+            <mat-label>First Name</mat-label>
+            <input matInput name="firstName" placeholder="please enter first Name"  formControlName = "firstName" id="firstName" class="form-control">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Last Name</mat-label>
+            <input matInput name="lastName" placeholder="please enter last Name"  formControlName = "lastName" id="lastName" class="form-control">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Birthday</mat-label>
+            <input matInput type="date" name="birthday" formControlName = "birthday" id="birthday" class="form-control">
+          </mat-form-field>
+        </div>
+        <div class="columns">
+          <mat-form-field class="example-full-width">
+            <mat-label>Paid</mat-label>
+            <input matInput name="paid" placeholder="please enter Number" formControlName = "paid" id="paid" type="number" class="form-control">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Unpaid</mat-label>
+            <input matInput name="unpaid" placeholder="please enter Number"  formControlName = "unpaid" id="unpaid" type="number" class="form-control">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Class</mat-label>
+            <input matInput name="class" placeholder="Ex.science"  formControlName = "class" id="class" class="form-control">
+          </mat-form-field>
+        </div>
+        <input  type="file"  name="file" style="margin-left: 20px;" formControlName = "file" id="file" class="form-control">
+        <div class="columns">
+          <button mat-raised-button color="primary">Submit</button>
+        </div>
+        </form>
+    </mat-card>
+  </mat-card>
+</div>

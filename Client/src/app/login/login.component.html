@@ -1,0 +1,26 @@
+<div class="container">
+      <mat-card>
+        <form  [formGroup] = "myForm" (ngSubmit)="submit()">
+          <mat-card-title>
+            <h4>Login</h4>
+          </mat-card-title>
+          <div class="columns">
+            <mat-form-field class="example-full-width">
+              <mat-label>First Name</mat-label>
+              <input matInput name="name" placeholder="please enter Name"  formControlName = "name" id="name" class="form-control">
+            </mat-form-field>
+            
+            <div class="columns">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Password</mat-label>
+                    <input matInput name="password" placeholder="please enter password"  formControlName = "password" id="password" class="form-control"  value="" autocomplete="off">
+                  </mat-form-field>
+            </div>
+          </div>
+          <div class="columns">
+            <button mat-raised-button color="primary">SignIn</button>
+          </div>
+          </form>
+      </mat-card>
+    
+  </div>
